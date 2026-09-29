@@ -10,9 +10,12 @@
     "frontendDist": "../dist"
   },
   "app": {
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:1420 ws://localhost:1420"
+    },
     "windows": [
       {
-        "title": "Ciel — tu agente local",
+        "title": "Ciel Taller — modelado 3D",
         "width": 1280,
         "height": 820,
         "minWidth": 980,
@@ -23,12 +26,9 @@
       }
     ]
   },
-  "security": {
-    "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:1420 ws://localhost:1420"
-  },
   "bundle": {
     "active": true,
     "targets": "all",
-    "icon": []
+    "icon": ["icons/icon.ico"]
   }
 }
